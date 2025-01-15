@@ -1,5 +1,7 @@
 # Building Your Vim-like Text Editor
 
+**Score**: 120/100 (highest)
+
 **Hongli SHEN** && **Ximing ZHENG**
 
 ## Description
