@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ALU_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ALU_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="210000001fs"></ZoomEndTime>
+      <Cursor1Time time="210000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="111"></NameColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/ALU_tb/ALUop" type="array">
+      <obj_property name="ElementShortName">ALUop[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUop[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/ALUSrc" type="logic">
+      <obj_property name="ElementShortName">ALUSrc</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/sftmd" type="logic">
+      <obj_property name="ElementShortName">sftmd</obj_property>
+      <obj_property name="ObjectShortName">sftmd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Branch" type="logic">
+      <obj_property name="ElementShortName">Branch</obj_property>
+      <obj_property name="ObjectShortName">Branch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/nBranch" type="logic">
+      <obj_property name="ElementShortName">nBranch</obj_property>
+      <obj_property name="ObjectShortName">nBranch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Branch_lt" type="logic">
+      <obj_property name="ElementShortName">Branch_lt</obj_property>
+      <obj_property name="ObjectShortName">Branch_lt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Branch_ge" type="logic">
+      <obj_property name="ElementShortName">Branch_ge</obj_property>
+      <obj_property name="ObjectShortName">Branch_ge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Branch_ltu" type="logic">
+      <obj_property name="ElementShortName">Branch_ltu</obj_property>
+      <obj_property name="ObjectShortName">Branch_ltu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Branch_geu" type="logic">
+      <obj_property name="ElementShortName">Branch_geu</obj_property>
+      <obj_property name="ObjectShortName">Branch_geu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/read_data_1" type="array">
+      <obj_property name="ElementShortName">read_data_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/read_data_2" type="array">
+      <obj_property name="ElementShortName">read_data_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">read_data_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/imm32" type="array">
+      <obj_property name="ElementShortName">imm32[31:0]</obj_property>
+      <obj_property name="ObjectShortName">imm32[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/Alu_result" type="array">
+      <obj_property name="ElementShortName">Alu_result[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Alu_result[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALU_tb/branch_result" type="logic">
+      <obj_property name="ElementShortName">branch_result</obj_property>
+      <obj_property name="ObjectShortName">branch_result</obj_property>
+   </wvobject>
+</wave_config>

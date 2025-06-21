@@ -1,0 +1,637 @@
+services:
+  peer5000:
+    build: .
+    container_name: peer5000
+    hostname: peer5000
+    ports:
+      - "6000:5000"    # Map peer TCP: 6000 -> 5000
+      - "8000:7000"    # Map dashboard: 8000 -> 7000
+    command: ["python", "node.py", "--id", "5000", "--config", "config.json","--mode","malicious","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.10
+
+  peer5001:
+    build: .
+    container_name: peer5001
+    hostname: peer5001
+    ports:
+      - "6001:5001"
+      - "8001:7001"
+    command: ["python", "node.py", "--id", "5001", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.11
+
+  peer5002:
+    build: .
+    container_name: peer5002
+    hostname: peer5002
+    ports:
+      - "6002:5002"
+      - "8002:7002"
+    command: ["python", "node.py", "--id", "5002", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.12
+
+  peer5003:
+    build: .
+    container_name: peer5003
+    hostname: peer5003
+    ports:
+      - "6003:5003"
+      - "8003:7003"
+    command: ["python", "node.py", "--id", "5003", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.13
+
+  peer5004:
+    build: .
+    container_name: peer5004
+    hostname: peer5004
+    ports:
+      - "6004:5004"    
+      - "8004:7004"    
+    command: ["python", "node.py", "--id", "5004", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.14
+
+  peer5005:
+    build: .
+    container_name: peer5005
+    hostname: peer5005
+    ports:
+      - "6005:5005"    
+      - "8005:7005"    
+    command: ["python", "node.py", "--id", "5005", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.15
+
+  peer5006:
+    build: .
+    container_name: peer5006
+    hostname: peer5006
+    ports:
+      - "6006:5006"    
+      - "8006:7006"    
+    command: ["python", "node.py", "--id", "5006", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.16
+
+  peer5007:
+    build: .
+    container_name: peer5007
+    hostname: peer5007
+    ports:
+      - "6007:5007"    
+      - "8007:7007"    
+    command: ["python", "node.py", "--id", "5007", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.17
+
+  peer5008:
+    build: .
+    container_name: peer5008
+    hostname: peer5008
+    ports:
+      - "6008:5008"    
+      - "8008:7008"    
+    command: ["python", "node.py", "--id", "5008", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.18
+
+  peer5009:
+    build: .
+    container_name: peer5009
+    hostname: peer5009
+    ports:
+      - "6009:5009"    
+      - "8009:7009"    
+    command: ["python", "node.py", "--id", "5009", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.19
+
+
+  peer5010:
+    build: .
+    container_name: peer5010
+    hostname: peer5010
+    ports:
+      - "6010:5010"    
+      - "8010:7010"    
+    command: ["python", "node.py", "--id", "5010", "--config", "config.json","--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.20
+  
+  # peer5011:
+  #   build: .
+  #   container_name: peer5011
+  #   hostname: peer5011
+  #   ports:
+  #     - "6011:5011"
+  #     - "8011:7011"
+  #   command: ["python", "node.py", "--id", "5011", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.21
+
+  # peer5012:
+  #   build: .
+  #   container_name: peer5012
+  #   hostname: peer5012
+  #   ports:
+  #     - "6012:5012"
+  #     - "8012:7012"
+  #   command: ["python", "node.py", "--id", "5012", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.22
+
+  # peer5013:
+  #   build: .
+  #   container_name: peer5013
+  #   hostname: peer5013
+  #   ports:
+  #     - "6013:5013"
+  #     - "8013:7013"
+  #   command: ["python", "node.py", "--id", "5013", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.23
+
+  # peer5014:
+  #   build: .
+  #   container_name: peer5014
+  #   hostname: peer5014
+  #   ports:
+  #     - "6014:5014"
+  #     - "8014:7014"
+  #   command: ["python", "node.py", "--id", "5014", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.24
+
+  # peer5015:
+  #   build: .
+  #   container_name: peer5015
+  #   hostname: peer5015
+  #   ports:
+  #     - "6015:5015"
+  #     - "8015:7015"
+  #   command: ["python", "node.py", "--id", "5015", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.25
+
+  # peer5016:
+  #   build: .
+  #   container_name: peer5016
+  #   hostname: peer5016
+  #   ports:
+  #     - "6016:5016"
+  #     - "8016:7016"
+  #   command: ["python", "node.py", "--id", "5016", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.26
+
+  # peer5017:
+  #   build: .
+  #   container_name: peer5017
+  #   hostname: peer5017
+  #   ports:
+  #     - "6017:5017"
+  #     - "8017:7017"
+  #   command: ["python", "node.py", "--id", "5017", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.27
+
+  # peer5018:
+  #   build: .
+  #   container_name: peer5018
+  #   hostname: peer5018
+  #   ports:
+  #     - "6018:5018"
+  #     - "8018:7018"
+  #   command: ["python", "node.py", "--id", "5018", "--config", "config.json", "--mode", "malicious", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.28
+
+  # peer5019:
+  #   build: .
+  #   container_name: peer5019
+  #   hostname: peer5019
+  #   ports:
+  #     - "6019:5019"
+  #     - "8019:7019"
+  #   command: ["python", "node.py", "--id", "5019", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.29
+
+  # peer5020:
+  #   build: .
+  #   container_name: peer5020
+  #   hostname: peer5020
+  #   ports:
+  #     - "6020:5020"
+  #     - "8020:7020"
+  #   command: ["python", "node.py", "--id", "5020", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.30
+
+  # peer5021:
+  #   build: .
+  #   container_name: peer5021
+  #   hostname: peer5021
+  #   ports:
+  #     - "6021:5021"
+  #     - "8021:7021"
+  #   command: ["python", "node.py", "--id", "5021", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.31
+
+  # peer5022:
+  #   build: .
+  #   container_name: peer5022
+  #   hostname: peer5022
+  #   ports:
+  #     - "6022:5022"
+  #     - "8022:7022"
+  #   command: ["python", "node.py", "--id", "5022", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.32
+
+  # peer5023:
+  #   build: .
+  #   container_name: peer5023
+  #   hostname: peer5023
+  #   ports:
+  #     - "6023:5023"
+  #     - "8023:7023"
+  #   command: ["python", "node.py", "--id", "5023", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.33
+
+  # peer5024:
+  #   build: .
+  #   container_name: peer5024
+  #   hostname: peer5024
+  #   ports:
+  #     - "6024:5024"
+  #     - "8024:7024"
+  #   command: ["python", "node.py", "--id", "5024", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.34
+
+  # peer5025:
+  #   build: .
+  #   container_name: peer5025
+  #   hostname: peer5025
+  #   ports:
+  #     - "6025:5025"
+  #     - "8025:7025"
+  #   command: ["python", "node.py", "--id", "5025", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.35
+
+  # peer5026:
+  #   build: .
+  #   container_name: peer5026
+  #   hostname: peer5026
+  #   ports:
+  #     - "6026:5026"
+  #     - "8026:7026"
+  #   command: ["python", "node.py", "--id", "5026", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.36
+
+  # peer5027:
+  #   build: .
+  #   container_name: peer5027
+  #   hostname: peer5027
+  #   ports:
+  #     - "6027:5027"
+  #     - "8027:7027"
+  #   command: ["python", "node.py", "--id", "5027", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.37
+
+  # peer5028:
+  #   build: .
+  #   container_name: peer5028
+  #   hostname: peer5028
+  #   ports:
+  #     - "6028:5028"
+  #     - "8028:7028"
+  #   command: ["python", "node.py", "--id", "5028", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.38
+
+  # peer5029:
+  #   build: .
+  #   container_name: peer5029
+  #   hostname: peer5029
+  #   ports:
+  #     - "6029:5029"
+  #     - "8029:7029"
+  #   command: ["python", "node.py", "--id", "5029", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.39
+
+  # peer5030:
+  #   build: .
+  #   container_name: peer5030
+  #   hostname: peer5030
+  #   ports:
+  #     - "6030:5030"
+  #     - "8030:7030"
+  #   command: ["python", "node.py", "--id", "5030", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.40
+
+  # peer5031:
+  #   build: .
+  #   container_name: peer5031
+  #   hostname: peer5031
+  #   ports:
+  #     - "6031:5031"
+  #     - "8031:7031"
+  #   command: ["python", "node.py", "--id", "5031", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.41
+
+  # peer5032:
+  #   build: .
+  #   container_name: peer5032
+  #   hostname: peer5032
+  #   ports:
+  #     - "6032:5032"
+  #     - "8032:7032"
+  #   command: ["python", "node.py", "--id", "5032", "--config", "config.json", "--mode", "malicious", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.42
+
+  # peer5033:
+  #   build: .
+  #   container_name: peer5033
+  #   hostname: peer5033
+  #   ports:
+  #     - "6033:5033"
+  #     - "8033:7033"
+  #   command: ["python", "node.py", "--id", "5033", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.43
+
+  # peer5034:
+  #   build: .
+  #   container_name: peer5034
+  #   hostname: peer5034
+  #   ports:
+  #     - "6034:5034"
+  #     - "8034:7034"
+  #   command: ["python", "node.py", "--id", "5034", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.44
+
+  # peer5035:
+  #   build: .
+  #   container_name: peer5035
+  #   hostname: peer5035
+  #   ports:
+  #     - "6035:5035"
+  #     - "8035:7035"
+  #   command: ["python", "node.py", "--id", "5035", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.45
+
+  # peer5036:
+  #   build: .
+  #   container_name: peer5036
+  #   hostname: peer5036
+  #   ports:
+  #     - "6036:5036"
+  #     - "8036:7036"
+  #   command: ["python", "node.py", "--id", "5036", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.46
+
+  # peer5037:
+  #   build: .
+  #   container_name: peer5037
+  #   hostname: peer5037
+  #   ports:
+  #     - "6037:5037"
+  #     - "8037:7037"
+  #   command: ["python", "node.py", "--id", "5037", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.47
+
+  # peer5038:
+  #   build: .
+  #   container_name: peer5038
+  #   hostname: peer5038
+  #   ports:
+  #     - "6038:5038"
+  #     - "8038:7038"
+  #   command: ["python", "node.py", "--id", "5038", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.48
+
+  # peer5039:
+  #   build: .
+  #   container_name: peer5039
+  #   hostname: peer5039
+  #   ports:
+  #     - "6039:5039"
+  #     - "8039:7039"
+  #   command: ["python", "node.py", "--id", "5039", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.49
+
+  # peer5040:
+  #   build: .
+  #   container_name: peer5040
+  #   hostname: peer5040
+  #   ports:
+  #     - "6040:5040"
+  #     - "8040:7040"
+  #   command: ["python", "node.py", "--id", "5040", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.50
+
+  # peer5041:
+  #   build: .
+  #   container_name: peer5041
+  #   hostname: peer5041
+  #   ports:
+  #     - "6041:5041"
+  #     - "8041:7041"
+  #   command: ["python", "node.py", "--id", "5041", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.51
+
+  # peer5042:
+  #   build: .
+  #   container_name: peer5042
+  #   hostname: peer5042
+  #   ports:
+  #     - "6042:5042"
+  #     - "8042:7042"
+  #   command: ["python", "node.py", "--id", "5042", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.52
+
+  # peer5043:
+  #   build: .
+  #   container_name: peer5043
+  #   hostname: peer5043
+  #   ports:
+  #     - "6043:5043"
+  #     - "8043:7043"
+  #   command: ["python", "node.py", "--id", "5043", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.53
+
+  # peer5044:
+  #   build: .
+  #   container_name: peer5044
+  #   hostname: peer5044
+  #   ports:
+  #     - "6044:5044"
+  #     - "8044:7044"
+  #   command: ["python", "node.py", "--id", "5044", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.54
+
+  # peer5045:
+  #   build: .
+  #   container_name: peer5045
+  #   hostname: peer5045
+  #   ports:
+  #     - "6045:5045"
+  #     - "8045:7045"
+  #   command: ["python", "node.py", "--id", "5045", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.55
+
+  # peer5046:
+  #   build: .
+  #   container_name: peer5046
+  #   hostname: peer5046
+  #   ports:
+  #     - "6046:5046"
+  #     - "8046:7046"
+  #   command: ["python", "node.py", "--id", "5046", "--config", "config.json", "--mode", "malicious", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.56
+
+  # peer5047:
+  #   build: .
+  #   container_name: peer5047
+  #   hostname: peer5047
+  #   ports:
+  #     - "6047:5047"
+  #     - "8047:7047"
+  #   command: ["python", "node.py", "--id", "5047", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.57
+
+  # peer5048:
+  #   build: .
+  #   container_name: peer5048
+  #   hostname: peer5048
+  #   ports:
+  #     - "6048:5048"
+  #     - "8048:7048"
+  #   command: ["python", "node.py", "--id", "5048", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.58
+
+  # peer5049:
+  #   build: .
+  #   container_name: peer5049
+  #   hostname: peer5049
+  #   ports:
+  #     - "6049:5049"
+  #     - "8049:7049"
+  #   command: ["python", "node.py", "--id", "5049", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.59
+
+  # peer5050:
+  #   build: .
+  #   container_name: peer5050
+  #   hostname: peer5050
+  #   ports:
+  #     - "6050:5050"
+  #     - "8050:7050"
+  #   command: ["python", "node.py", "--id", "5050", "--config", "config.json", "--dynamic"]
+  #   networks:
+  #     p2pnet:
+  #       ipv4_address: 172.28.0.60
+
+  # 动态节点模板 - 不会自动启动，作为参考
+  # 启动新节点示例 (Windows PowerShell):
+  # docker-compose run -d --name peer5011 peer5000 python node.py --id 5011 --config config.json --dynamic
+  #
+  # 启动新节点示例 (Linux/Mac):
+  # docker-compose run -d --name peer5011 --hostname peer5011 --ip 172.28.0.21 -p 6011:5011 -p 8011:7011 peer5011 python node.py --id 5011 --config config.json --dynamic
+  #
+  # 优雅退出节点:
+  # docker stop peer5011
+  peer_template:
+    build: .
+    profiles: ["never-start"]  # 这个配置使得该服务不会自动启动
+    command: ["python", "node.py", "--id", "PEER_ID", "--config", "config.json", "--dynamic"]
+    networks:
+      p2pnet:
+        ipv4_address: 172.28.0.99
+
+networks:
+  p2pnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16
